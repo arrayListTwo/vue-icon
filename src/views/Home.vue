@@ -1,9 +1,28 @@
 <template>
   <div class="home">
-    <div class="back">
-      <svg class="icon icon-back" aria-hidden="true">
-        <use xlink:href="#icon-back"></use>
-      </svg>
+    <div class="icon-wrapper">
+      <div class="icon-content">
+        <svg class="icon icon-back" aria-hidden="true">
+          <use xlink:href="#icon-prev"></use>
+        </svg>
+      </div>
+      <span>上一个</span>
+    </div>
+    <div class="icon-wrapper">
+      <div class="icon-content">
+        <svg class="icon icon-back" aria-hidden="true">
+          <use xlink:href="#icon-pause"></use>
+        </svg>
+      </div>
+      <span>状态</span>
+    </div>
+    <div class="icon-wrapper">
+      <div class="icon-content">
+        <svg class="icon icon-back" aria-hidden="true">
+          <use xlink:href="#icon-next"></use>
+        </svg>
+      </div>
+      <span>下一个</span>
     </div>
   </div>
 </template>
@@ -15,19 +34,29 @@
 </script>
 
 <style lang="stylus" scoped>
+  @import "../common/stylus/icon.styl"
   .home
-    .back
-      .icon
-        width: 1em
-        height: 1em
-        vertical-align: -0.15em
-        fill: rgba(0, 0, 0, 0)
-        overflow: hidden
+    margin-top 20px
 
-      .icon-back
-        width 30px
-        height 30px
+    .icon-wrapper
+      display inline-block
+      flex-direction column
+      align-items center
+      justify-content center
+      padding 10px
+      flex-wrap wrap
 
-        &:active, &:focus
-          fill #8CF6FB
+      .icon-content
+        transition-duration .5s
+        transform-origin bottom
+
+        &:hover
+          transform scale(1.25)
+
+          .icon-back
+            fill #8CF6FB
+
+        .icon-back
+          width 30px
+          height 30px
 </style>
