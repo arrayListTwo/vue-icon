@@ -27,14 +27,13 @@
   </div>
 </template>
 
-<script>
+<script type="text/ecmascript-6">
   export default {
     name: 'home'
   }
 </script>
 
 <style lang="stylus" scoped>
-  @import "../common/stylus/icon.styl"
   .home
     margin-top 20px
 

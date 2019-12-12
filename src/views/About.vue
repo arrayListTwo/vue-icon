@@ -1,5 +1,19 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <div class="icon-wrapper">
+      <span class="iconfont icon-shoucang icon-active"></span>
+    </div>
   </div>
 </template>
+<script type="text/ecmascript-6">
+
+</script>
+<style lang="stylus" scoped>
+  .about
+    .icon-wrapper
+      margin-top 20px
+
+      .icon-active
+        font-size 30px
+        color aqua
+</style>
