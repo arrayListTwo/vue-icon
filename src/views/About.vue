@@ -2,6 +2,7 @@
   <div class="about">
     <div class="icon-wrapper">
       <span class="iconfont icon-shoucang icon-active"></span>
+      <span class="icomoon icomoon-caution"></span>
     </div>
   </div>
 </template>
