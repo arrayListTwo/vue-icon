@@ -11,12 +11,22 @@ const routes = [
     component: Symbol
   },
   {
-    path: '/about',
-    name: 'about',
+    path: '/fontClass',
+    name: 'fontClass',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () => import('../views/font-class.vue')
+  },
+  {
+    path: '/icoMoon',
+    name: 'icoMoon',
+    component: () => import('../views/ico-moon.vue')
+  },
+  {
+    path: '/packageCom',
+    name: 'packageCom',
+    component: () => import('../views/package-com.vue')
   }
 ]
 

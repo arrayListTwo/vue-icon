@@ -49,7 +49,7 @@
         transition-duration .5s
         transform-origin bottom
 
-        &:hover
+        &:hover /*缩放实现*/
           transform scale(1.25)
 
           .icon-back

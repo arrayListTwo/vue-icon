@@ -3,9 +3,11 @@
     <div id="nav">
       <router-link to="/">Symbol</router-link>
       |
-      <router-link to="/about">Font class</router-link>
+      <router-link to="/fontClass">Font class</router-link>
       |
-      <router-link to="/about">icoMoon</router-link>
+      <router-link to="/icoMoon">icoMoon</router-link>
+      |
+      <router-link to="/packageCom">packageCom</router-link>
     </div>
     <router-view/>
   </div>
